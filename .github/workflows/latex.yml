@@ -1,0 +1,21 @@
+name: Build PDFs
+on:
+  push:
+  pull_request:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dante-ev/latex-action@v2
+        with:
+          root_file: |
+            HalimAbdul.tex
+            HalimAbdul_Beamer_.tex
+      - name: Upload PDFs
+        uses: actions/upload-artifact@v4
+        with:
+          name: pdfs
+          path: |
+            HalimAbdul.pdf
+            HalimAbdul_Beamer_.pdf
