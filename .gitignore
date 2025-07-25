@@ -1,0 +1,28 @@
+# LaTeX aux files
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.idx
+*.ilg
+*.ind
+*.lof
+*.log
+*.lot
+*.nav
+*.out
+*.run.xml
+*.snm
+*.synctex.gz
+*.toc
+*.vrb
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+
+# Build outputs (uncomment to ignore PDFs)
+# *.pdf
